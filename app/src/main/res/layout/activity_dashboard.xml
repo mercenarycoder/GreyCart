@@ -1,0 +1,68 @@
+<androidx.drawerlayout.widget.DrawerLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:id="@+id/draw_layout_main"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/toolbarmain"
+    android:background="@drawable/shape_test"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center|left"
+     >
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:text="DashBoard"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>
+    <!--From here the other parts code should be written-->
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/frame_base"
+    />
+</LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view_MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffff"
+        app:itemIconTint="@color/colorPrimaryDark">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/dm"
+                layout="@layout/toolbar_app"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></include>
+
+        </LinearLayout>
+        </ScrollView>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

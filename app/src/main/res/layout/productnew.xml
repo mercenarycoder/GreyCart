@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:baselineAligned="false"
+    android:layout_height="220dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginRight="5dp"
+    android:gravity="center"
+    android:elevation="7dp"
+    android:background="@drawable/catyeffect"
+    android:id="@+id/click3"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+      android:padding="5dp"
+       android:id="@+id/cat_image3"
+       android:layout_marginLeft="3dp"
+       android:layout_marginRight="3dp"
+       android:layout_marginTop="3dp"
+       android:background="@drawable/neweff"
+       android:layout_marginBottom="60dp"
+       android:src="@drawable/circlecropped"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="Product Name"
+        android:gravity="center|left"
+        android:paddingStart="15dp"
+        android:id="@+id/cat_name4"
+        android:textColor="#000"
+        android:textSize="14sp"
+        />
+
+        <Switch
+            android:id="@+id/on_off1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/basecolor"
+            android:gravity="left|center"
+            android:paddingStart="15dp"
+            android:text="₹ Price"
+            android:textColor="#000"
+            android:textColorHighlight="@color/basecolor"
+            android:textColorLink="@color/basecolor"
+            android:textCursorDrawable="@color/basecolor"
+            android:textSize="12sp" />
+    </LinearLayout>
+</RelativeLayout>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5dp"
+    android:elevation="7dp"
+    android:gravity="center"
+    android:background="@drawable/catyeffect"
+    android:id="@+id/click4"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/circlecropped"
+            android:background="@drawable/neweff"
+            android:id="@+id/cat_image4"
+            android:layout_marginBottom="60dp"
+            />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+          />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:background="#00FFFFFF"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:text="Product Name"
+                android:gravity="center|left"
+                android:paddingStart="15dp"
+                android:id="@+id/cat_name5"
+                android:textColor="#000"
+                android:textSize="14sp"
+                />
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:gravity="left|center"
+                android:text="₹. Price"
+                android:id="@+id/on_off2"
+                android:textSize="12sp"
+                android:paddingStart="15dp"
+
+                android:textColor="#000"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

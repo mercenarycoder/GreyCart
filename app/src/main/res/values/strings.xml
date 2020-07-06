@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GreyCart Vendor</string>
+    <string name="ok">OK</string>
+    <string name="app_enable">This Option makes the setting on and off and makes the services provided
+    by your company online and offline</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:minHeight="100dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Finished"
+            android:id="@+id/finished_clicker"
+            android:textSize="18sp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center|left"
+            android:textColor="#746F6F"/>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#746F6F"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/loader_finished"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/circular_shape"
+                android:progressTint="#00070404"
+                android:visibility="invisible" />
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="Load Finished Appointment"
+                android:textColor="#fff"
+                android:padding="15dp"
+                android:visibility="invisible"
+                android:enabled="false"
+                android:layout_centerInParent="true"
+                android:background="@drawable/call_her2"
+                android:layout_weight="1"
+                android:id="@+id/get_finish_appointment"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Records Found"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:enabled="false"
+                android:id="@+id/showwhen_not_finished"
+                android:visibility="invisible"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/finished_recycler"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Cancel"
+            android:textSize="21sp"
+            android:id="@+id/cancel_click"
+            android:layout_marginBottom="2dp"
+            android:gravity="center|left"
+            android:textColor="#746F6F"/>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#746F6F"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/loader_cancel"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/circular_shape"
+                android:progressTint="#000C0808"
+                android:visibility="invisible" />
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="Load Cancelled Appointments"
+                android:textColor="#fff"
+                android:padding="15dp"
+                android:visibility="invisible"
+                android:enabled="false"
+                android:layout_centerInParent="true"
+                android:background="@drawable/call_her2"
+                android:layout_weight="1"
+                android:id="@+id/get_cancelled_appointment"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Record Found"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:enabled="false"
+                android:id="@+id/showwhen_not_cancel"
+                android:visibility="invisible"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel_recycler"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

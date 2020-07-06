@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New"
+    android:textColor="#7a7878"
+    android:textSize="22sp"
+    android:padding="0dp"
+    />
+<TableRow android:layout_height="2dp"
+    android:layout_width="match_parent"
+    android:background="#e6e7e8"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="No New Orders"
+          android:textSize="22sp"
+          android:layout_centerInParent="true"
+          android:textStyle="bold"
+          android:enabled="false"
+          android:visibility="invisible"
+          android:gravity="center"
+          android:id="@+id/showwhen_no_appointment"
+          />
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="wrap_content"
+    android:id="@+id/swipe_to_get_appointment"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="120dp">
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="120dp"
+    android:id="@+id/recycler"
+    />
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+       >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="More Orders...  "
+        android:gravity="center"
+        android:textColor="#99132ACE"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/view_more"
+        android:padding="2dp"
+        />
+    <TableRow android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#29310a"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:tint="#29310a"
+            android:src="@drawable/ic_settings_final"
+            android:id="@+id/services_dash"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:tint="#29310a"
+            android:src="@drawable/menu_mehroon_services"
+            android:id="@+id/appointment_dash"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:tint="#29310a"
+            android:src="@drawable/last_dashboard_final"
+            android:id="@+id/head_dash"/>
+    </LinearLayout>
+</LinearLayout>
+  </RelativeLayout>
+</LinearLayout>

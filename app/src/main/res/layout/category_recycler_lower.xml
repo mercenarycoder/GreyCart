@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/item_product"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/click_responce"
+    android:baselineAligned="false"
+    android:layout_margin="10dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="A Product"
+    android:textColor="#000"
+    android:id="@+id/product_name"
+    android:layout_weight="0.7"
+     android:textSize="16sp"
+    android:gravity="center|left"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Rs. rate"
+        android:textColor="#000"
+        android:id="@+id/product_price"
+        android:layout_weight="0.8"
+        android:textSize="16sp"
+        android:gravity="right|center"
+        />
+   <Switch
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="1"
+       android:layout_marginRight="5dp"
+       android:id="@+id/include_item"
+       android:checked="false"
+       />
+</LinearLayout>

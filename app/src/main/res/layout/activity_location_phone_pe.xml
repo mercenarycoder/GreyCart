@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".LocationPhonePe">
+
+
+ <ImageView
+     android:layout_width="120dp"
+     android:layout_height="120dp"
+   android:src="@drawable/circlecropped"
+   android:layout_alignParentTop="true"
+  android:layout_centerHorizontal="true"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="150dp"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textSize="20sp"
+     android:text="Upload Business Location"
+     android:gravity="center"
+     android:layout_marginBottom="20dp"
+     android:textColor="@color/graycolor"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        android:background="@drawable/edittext_login">
+    <fragment android:id="@+id/autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/click_textview"
+        android:text="Save My Current Location as
+        Business Location"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_address"
+        android:paddingStart="15dp"
+        android:drawableTint="#29310a"
+        android:textColor="#29310a"
+        android:id="@+id/current_location_final"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Or"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/graycolor"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/submit_location"
+        android:text="Skip "
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:background="@drawable/call_location"
+        />
+
+</LinearLayout>
+
+</RelativeLayout>

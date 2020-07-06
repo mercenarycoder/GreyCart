@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/getcategory"
+    android:background="@drawable/category_recycler_effect"
+    android:baselineAligned="false"
+    android:layout_margin="10dp">
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+  android:layout_weight="1"
+     android:padding="6.5dp"
+  android:src="@drawable/ic_eye_god"
+     android:tint="#fff"
+  android:layout_marginStart="5dp"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.35"
+    android:text="Category Name"
+    android:gravity="left|center"
+    android:textSize="22sp"
+    android:paddingStart="10dp"
+    android:id="@+id/cat_name"
+    android:textColor="#fff"
+    />
+
+ <ImageView
+     android:id="@+id/update_things"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_gravity="center"
+     android:layout_weight="1"
+     android:padding="10dp"
+     android:tint="#000"
+     android:src="@drawable/final_edir"
+     android:tooltipText="Update Category" />
+
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="30dp"
+     android:layout_weight="1"
+     android:tooltipText="Add Service"
+     android:id="@+id/add_things"
+     android:tint="#000"
+     android:layout_marginLeft="0dp"
+     android:src="@drawable/add_icon"
+     android:layout_gravity="center"
+     />
+</LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/recycler_attached"
+android:visibility="invisible"
+    />
+</LinearLayout>

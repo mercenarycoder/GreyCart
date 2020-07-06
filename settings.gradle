@@ -1,0 +1,2 @@
+rootProject.name='GreyCart'
+include ':app'

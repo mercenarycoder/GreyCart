@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".productRecycler">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbarmain"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape_test"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center|left"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_button"
+                android:tint="#fff"
+                android:padding="8dp"
+                android:id="@+id/back_jao"/>
+            <TextView
+                android:id="@+id/menu_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="Category : Category"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="55dp"
+    android:layout_marginBottom="55dp"
+    android:id="@+id/swipe_products">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/see_products"/>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/btn_round"
+    android:layout_margin="5dp"
+    android:textColor="#fff"
+    android:text="Add Product"
+    android:textSize="13sp"
+    android:id="@+id/add_product"/>
+</RelativeLayout>

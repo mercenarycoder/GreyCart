@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_login"
+        android:layout_width="match_parent"
+        android:baselineAligned="false"
+        android:layout_margin="5dp"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="HSN Code"
+            android:textSize="16sp"
+            android:gravity="center|left"
+            android:paddingStart="7dp"
+            android:layout_weight="0.8"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Rate"
+            android:textSize="18sp"
+            android:gravity="center|left"
+            android:paddingStart="7dp"
+            android:layout_weight="1"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Edit"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_hsn"
+        android:layout_marginBottom="50dp">
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="50dp"
+      android:id="@+id/recycler_hsn"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>
+    <Button
+        android:id="@+id/item_hsn_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:textColor="#fff"
+        android:background="@drawable/btn_round2"
+        android:layout_alignParentBottom="true"
+        android:text="Add Item" />
+</RelativeLayout>
